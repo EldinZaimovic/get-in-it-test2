@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +12,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.para {
+  width: 350px;
+}
+
+.para::first-letter {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+  text-transform: capitalize;
+  font-family: cursive;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: auto;
+}
+
+.card-text::first-letter {
+  text-transform: capitalize;
 }
