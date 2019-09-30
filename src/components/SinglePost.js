@@ -12,7 +12,7 @@ class MainArea extends Component {
 
   componentDidMount() {
     const ID = this.props.match.params.id;
-    fetch(`http://jsonplaceholder.typicode.com/posts/${ID}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts/${ID}`)
       .then(res => res.json())
       .then(data => {
         this.setState({ posts: data });
